@@ -1,12 +1,267 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+<body>
+<!--    шапка-->
+<header class="main-header">
+  <div class="main-header_logo">
+    <a href="index.html" class="logo">Device</a>
+  </div>
+  <div class="main-header_item">
+    <input type="search" name="search" id="search" placeholder="поиск по сайту">
+    <label for="search" class="search"></label>
+    <button type="submit">Войти</button>
+    <button type="submit">Сравнить</button>
+<!--    войти, сравнить и корзина - сомневаюсь в тегах-->
+    <a href="#">Корзина</a>
+  </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 
-  </body>
+  <nav class="main-nav">
+    <ul class="main-nav_list">
+      <li class="main-nav_item"><a href="catalog.html">Каталог товаров</a>
+        <ul class="main-nav_list-down">
+          <li class="main-nav_item"><a href="catalog.html">Виртуальная реальность</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Моноподы для селфи</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Экшн-камеры</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Фитнес-браслеты</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Умные часы</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Квадракоптер</a></li>
+        </ul>
+      </li>
+      <li class="main-nav_item"><a href="#">Доставка</a></li>
+      <li class="main-nav_item"><a href="#">Гарантия</a></li>
+      <li class="main-nav_item"><a href="#">Контакты</a></li>
+    </ul>
+
+  </nav>
+
+</header>
+
+<!--  слайдер-->
+
+<section class="slider-first">
+
+  <span>1</span>
+  <div class="slider-item">
+    <img src="" alt="квадрвкоптер" height="506" width="512">
+  </div>
+  <div class="slider-item">
+    <span>Порхает как бабочка, <br> жалит как пчела!</span>
+    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+      мощным лазером, замаскированным под стандартную камеру.
+    </p>
+    <a href="catalog.html" class="btn">подробнее</a>
+
+    <div class="characteristic">
+      <span>800 м</span>
+      <span>Дальность полета</span>
+    </div>
+    <div class="characteristic">
+      <p>50 м</p>
+      <p>Радиус поражения</p>
+    </div>
+
+<!--( не знаю надо ли верстать навигацию для слайдера)-->
+
+  </div>
+  <div class="slider-nav">
+    <label for="slider-one">
+      <input type="checkbox" id="slider-one">
+    </label>
+    <label for="slider-two">
+      <input type="checkbox" id="slider-two">
+    </label>
+    <label for="slider-three">
+      <input type="checkbox" id="slider-three">
+    </label>
+  </div>
+</section>
+
+
+<!--  <section>-->
+<!--    <label for="slider-one">-->
+<!--      <input type="checkbox" id="slider-one">-->
+<!--    </label>-->
+<!--    <img src="#" alt="квадракоптер">-->
+<!--    <span>1</span>-->
+<!--    <span>Порхает как бабочка, <br> жалит как пчела!</span>-->
+<!--    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен-->
+<!--      мощным лазером, замаскированным под стандартную камеру.-->
+<!--    </p>-->
+<!--    <a href="#">подробнее</a>-->
+<!--    <p>800 м</p>-->
+<!--    <p>Дальность полета</p>-->
+<!--    <p>50 м</p>-->
+<!--    <p>Радиус поражения</p>-->
+
+<!--    <label for="slider-two">-->
+<!--      <input type="checkbox" id="slider-two">-->
+<!--    </label>-->
+<!--    <img src="#" alt="квадракоптер">-->
+<!--    <span>2</span>-->
+<!--    <span>Худеем <br> правильно!</span>-->
+<!--    <p>Мотивирующие фитнес-браслеты помогут найти в себе силы-->
+<!--      не пропускать занятия и соблюдать диету.-->
+<!--    </p>-->
+<!--    <a href="#">подробнее</a>-->
+<!--    <p>48 м</p>-->
+<!--    <p>Без подзарядки></p>-->
+
+
+<!--  </section>-->
+
+<!--    продукция-->
+
+<section class="product">
+  <ul class="product-list">
+    <li class="product-item">
+      <img src="" alt="Виртуальная реальность">
+      <a href="catalog.html">Виртуальная реальность</a>
+    </li>
+    <li class="product-item">
+      <img src="" alt="Моноподы для селфи">
+      <a href="catalog.html">Моноподы для селфи</a>
+    </li>
+    <li class="product-item">
+      <img src="" alt="Экшн-камеры">
+      <a href="catalog.html">Экшн-камеры</a>
+    </li>
+    <li class="product-item">
+      <img src="" alt="Фитнес-браслеты">
+      <a href="catalog.html">Фитнес-браслеты</a>
+    </li>
+    <li class="product-item">
+      <img src="" alt="Умные часы">
+      <a href="catalog.html">Умные часы</a>
+    </li>
+    <li class="product-item">
+      <img src="" alt="Квадрокоптеры">
+      <a href="catalog.html">Квадрокоптеры</a>
+    </li>
+  </ul>
+</section>
+
+<!--  второй слайдер (жалкая попытка обойтись без js - стоит ли?))-->
+
+<section class="slider-second">
+  <label for="delivery">Доставка</label>
+  <input type="checkbox" id="delivery">
+  <div class="block-text">
+    <h2>Доставка</h2>
+    <p>Мы с удовольствием доставим ваш товар прямо к вашему
+      подъезду совершенно бесплатно! Ведь мы неплохо
+      заработаем, поднимая его на ваш этаж.</p>
+  </div>
+  <div class="block-img">
+    <img src="#" alt="бегущий чел">
+  </div>
+
+
+  <label for="guarantee">Гарантия</label>
+  <input type="checkbox" id="guarantee">
+  <div class="block-text">
+    <h2>Гарантия</h2>
+    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
+      не переживайте, мы выдадим вам новый.
+      Товар, не дом, конечно же.</p>
+  </div>
+  <div class="block-img">
+    <img src="#" alt="бегущий чел">
+  </div>
+
+  <label for="credit">Кредит</label>
+  <input type="checkbox" id="credit">
+  <div class="block-text">
+    <h2>Кредит</h2>
+    <p>Залезть в долговую яму стало проще! Кредитные консультанты
+      подберут для вас наиболее выгодные
+      условия кредита. Выгодные для нашего банка, разумеется.</p>
+  </div>
+  <div class="block-img">
+    <img src="#" alt="бегущий чел">
+  </div>
+
+</section>
+
+<!--  клиенты-->
+
+<section class="clients">
+
+  <ul class="clients-list">
+    <li><a href=""><img src="" alt="logo"></a></li>
+    <li><a href=""><img src="" alt="logo"></a></li>
+    <li><a href=""><img src="" alt="logo"></a></li>
+    <li><a href=""><img src="" alt="logo"></a></li>
+  </ul>
+</section>
+
+<!--  контакты /о нас-->
+
+<section class="about">
+  <div class="block-about">
+    <h2>О нас</h2>
+    <p>Огромный выбор гаджетов не оставит равнодушным гика,
+      который есть в каждом из нас.</p>
+    <p>Мы можем доставить ваш товар в самые отдаленные точки
+      России! DEVICE работает со многими транспортными компаниями:</p>
+    <ul>
+      <li><a href="">Деловые линии</a></li>
+      <li><a href="">Автотрейдинг</a></li>
+      <li><a href="">ЖелДорЭкспедиция</a></li>
+
+    </ul>
+    <button class="btn">Подробнее о нас</button>
+  </div>
+
+
+  <div class="block-contact">
+    <h2>Контакты</h2>
+    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+      проверить работоспособность покупки. Всякое бывает.</p>
+    <!--    <iframe src="#" frameborder="0"></iframe>-->
+    <button type="submit" class="btn">Напишите нам</button>
+  </div>
+</section>
+
+<!--  footer-->
+
+<footer class="footer">
+  <div class="footer-item">
+    <a href="index.html">Device</a>
+    <p>Санкт-Петербург, набережная
+      реки Карповки, 5, литера П.
+    </p>
+  </div>
+
+  <div class="footer-item">
+    <ul class="footer-nav">
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <ul class="social_net">
+      <li><a href=""><img src="" alt="facebook"></a></li>
+      <li><a href=""><img src="" alt="instagram"></a></li>
+      <li><a href=""><img src="" alt="twitter"></a></li>
+    </ul>
+  </div>
+
+  <div class="footer-item">
+    <button type="submit">Войти</button>
+    <button type="submit">Сравнить</button>
+    <a href="#">Корзина</a>
+
+    <a href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
+
+    <a href="https://htmlacademy.ru/">html.academy_logo</a>
+  </div>
+</footer>
+
+<!--    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
+
+</body>
 </html>

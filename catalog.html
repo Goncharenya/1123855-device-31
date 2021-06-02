@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+<body>
+<header class="main-header">
+
+  <!--    шапка-->
+
+  <a href="index.html" class="logo">Device</a>
+  <input type="search" name="search" id="search" placeholder="поиск по сайту">
+  <label for="search" class="search"></label>
+  <button type="submit">Войти</button>
+  <button type="submit">Сравнить</button>
+  <a href="#">Корзина</a>
+
+
+  <nav class="main-nav">
+    <ul class="main-nav_list">
+      <li class="main-nav_item"><a href="catalog.html">Каталог товаров</a>
+        <ul class="main-nav_list-down">
+          <li class="main-nav_item"><a href="catalog.html">Виртуальная реальность</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Моноподы для селфи</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Экшн-камеры</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Фитнес-браслеты</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Умные часы</a></li>
+          <li class="main-nav_item"><a href="catalog.html">Квадракоптер</a></li>
+        </ul>
+      </li>
+      <li class="main-nav_item"><a href="#">Доставка</a></li>
+      <li class="main-nav_item"><a href="#">Гарантия</a></li>
+      <li class="main-nav_item"><a href="#">Контакты</a></li>
+    </ul>
+
+  </nav>
+
+</header>
+<main class="main-contant">
+  <h1>Моноподы для селфи</h1>
+
+  <!--  хлебные крошки-->
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+    <li class="breadcrumb-item"><a href="catalog.html">Каталог товаров</a></li>
+    <li class="breadcrumb-item"><a href="catalog.html">Моноподы для селфи</a></li>
+  </ul>
+
+  <section class="catalog">
+    <div class="filters">
+      <h2>Фильтр:</h2>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Стоимость</legend>
+
+          <!--        задать вопрос о фильтре цены-->
+
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="black" id="black" checked>
+              <label for="black">Черный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="white" id="white">
+              <label for="white">Белый</label>
+            </li>
+            <li>
+              <input type="checkbox" name="blue" id="blue" checked>
+              <label for="blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="red" checked>
+              <label for="red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="pink">
+              <label for="pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <input type="radio" name="Bluetooth" id="true">
+          <label for="true">Есть</label>
+          <input type="radio" name="Bluetooth" id="false">
+          <label for="false">Нет</label>
+        </fieldset>
+        <fieldset>
+          <button type="submit" class="btn">Показать</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="catalog-product">
+      <div class="catalog-product_filter">
+        <h2>Сортировка:</h2>
+        <ul>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По популярности</li>
+        </ul>
+      </div>
+
+      <!--    указатели вверх/вниз-->
+      <div class="catalog-cards">
+
+        <div class="catalog-cards_item">
+          <div class="catalog-cards_pic">
+            <img src="" alt="Любительская селфи-палка">
+          </div>
+          <h3>Любительская селфи-палка</h3>
+          <span class="price">1100 руб</span>
+          <button>В корзину</button>
+        </div>
+
+        <div class="catalog-cards_item">
+          <div class="catalog-cards_pic">
+            <img src="" alt="Профессиональная селфи-палка">
+          </div>
+          <h3>Профессиональная селфи-палка</h3>
+          <span class="price">1500 руб</span>
+          <button>В корзину</button>
+        </div>
+
+        <div class="catalog-cards_item">
+          <div class="catalog-cards_pic">
+            <img src="" alt="Непотопляемая селфи-палка">
+          </div>
+          <h3>Непотопляемая селфи-палка</h3>
+          <span class="price">1500 руб</span>
+          <button>В корзину</button>
+        </div>
+
+        <div class="catalog-cards_item">
+          <div class="catalog-cards_pic">
+            <img src="" alt="Селфи-палка «Следуй за мной»">
+          </div>
+          <h3>Селфи-палка «Следуй за мной»</h3>
+          <span class="price">1900 руб</span>
+          <button>В корзину</button>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="footer-item">
+    <a href="index.html">Device</a>
+    <p>Санкт-Петербург, набережная
+      реки Карповки, 5, литера П.
+    </p>
+  </div>
+
+  <div class="footer-item">
+    <ul class="footer-nav">
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <ul class="social_net">
+      <li><a href=""><img src="" alt="facebook"></a></li>
+      <li><a href=""><img src="" alt="instagram"></a></li>
+      <li><a href=""><img src="" alt="twitter"></a></li>
+    </ul>
+  </div>
+
+  <div class="footer-item">
+    <button type="submit">Войти</button>
+    <button type="submit">Сравнить</button>
+    <a href="#">Корзина</a>
+
+    <a href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
+
+    <a href="https://htmlacademy.ru/">html.academy_logo</a>
+  </div>
+</footer>
+
+
+</body>
+</html>

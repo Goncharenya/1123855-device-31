@@ -3,33 +3,64 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!--    шапка-->
-<header class="main-header">
+<header class="main-header wrap">
+  <!--  <div class="bg-yellow"></div>-->
   <div class="main-header_logo">
-    <a href="index.html" class="logo">Device</a>
+    <a href="index.html" class="logo"><img src="img/-e-logo.png" alt=""></a>
   </div>
   <div class="main-header_item">
-    <input type="search" name="search" id="search" placeholder="поиск по сайту">
+    <div class="search-box">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
+    </div>
     <label for="search" class="search"></label>
-    <button type="submit">Войти</button>
-    <button type="submit">Сравнить</button>
-<!--    войти, сравнить и корзина - сомневаюсь в тегах-->
-    <a href="#">Корзина</a>
+    <div class="login-box">
+      <button type="submit" class="login">
+      </button>
+
+      <img src="img/icon_user.png" alt="" class="login-pic">
+      Войти
+
+    </div>
+    <div class="compare-box">
+      <button type="submit" class="compare">
+      </button>
+      <img class="compare-pic" src="img/icon_chart.png" alt="">
+      Сравнить
+
+    </div>
+
+    <!--    войти, сравнить и корзина - сомневаюсь в тегах-->
+    <div class="basket-box">
+      <a href="#" class="basket">
+        <img class="basket-pic" src="img/icon_cart.png" alt="">
+        Корзина</a>
+    </div>
   </div>
 
 
   <nav class="main-nav">
     <ul class="main-nav_list">
-      <li class="main-nav_item"><a href="catalog.html">Каталог товаров</a>
+      <li class="main-nav_item open">
+        <a href="catalog.html">Каталог товаров</a>
+        <img class="plus" alt="open" src="img/icon_plus.png">
+
         <ul class="main-nav_list-down">
-          <li class="main-nav_item"><a href="catalog.html">Виртуальная реальность</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Моноподы для селфи</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Экшн-камеры</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Фитнес-браслеты</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Умные часы</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Квадракоптер</a></li>
+          <li>
+            <div class="border-top-gradient"></div>
+          </li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Виртуальная реальность</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Фитнес-браслеты</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Квадракоптер</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Моноподы для селфи</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Умные часы</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Экшн-камеры</a></li>
         </ul>
       </li>
       <li class="main-nav_item"><a href="#">Доставка</a></li>
@@ -37,13 +68,14 @@
       <li class="main-nav_item"><a href="#">Контакты</a></li>
     </ul>
 
+
   </nav>
 
 </header>
 
 <!--  слайдер-->
 
-<section class="slider-first">
+<section class="slider-first wrap">
 
   <span>1</span>
   <div class="slider-item">
@@ -65,7 +97,7 @@
       <p>Радиус поражения</p>
     </div>
 
-<!--( не знаю надо ли верстать навигацию для слайдера)-->
+    <!--( не знаю надо ли верстать навигацию для слайдера)-->
 
   </div>
   <div class="slider-nav">
@@ -116,7 +148,7 @@
 
 <!--    продукция-->
 
-<section class="product">
+<section class="product wrap">
   <ul class="product-list">
     <li class="product-item">
       <img src="" alt="Виртуальная реальность">
@@ -147,7 +179,7 @@
 
 <!--  второй слайдер (жалкая попытка обойтись без js - стоит ли?))-->
 
-<section class="slider-second">
+<section class="slider-second wrap">
   <label for="delivery">Доставка</label>
   <input type="checkbox" id="delivery">
   <div class="block-text">
@@ -189,7 +221,7 @@
 
 <!--  клиенты-->
 
-<section class="clients">
+<section class="clients wrap">
 
   <ul class="clients-list">
     <li><a href=""><img src="" alt="logo"></a></li>
@@ -201,7 +233,7 @@
 
 <!--  контакты /о нас-->
 
-<section class="about">
+<section class="about wrap">
   <div class="block-about">
     <h2>О нас</h2>
     <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -229,7 +261,7 @@
 
 <!--  footer-->
 
-<footer class="footer">
+<footer class="footer wrap">
   <div class="footer-item">
     <a href="index.html">Device</a>
     <p>Санкт-Петербург, набережная

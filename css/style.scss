@@ -9,26 +9,30 @@ $special-yellow-light: #F7E296;
 }
 
 @font-face {
-  font-family: opensans;
+  font-family: Opensans;
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
-  font-family: gilroylight;
+  font-family: Gilroy;
   src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
-body {
+.body-page {
   width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  font-family: gilroylight, sans-serif;
+  font-family: Opensans, sans-serif;
+
+}
+
+.body-page {
 
 }
 
@@ -56,6 +60,13 @@ a {
     margin: -20px 0 0 60px;
 
     .logo {
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:focus {
+        opacity: .3;
+      }
     }
   }
 
@@ -66,7 +77,19 @@ a {
     padding: 2rem 60px;
 
     .search-box {
+      border-bottom: 2px solid transparent;
       width: 50%;
+
+      .search {
+        outline: none;
+        border-bottom: 2px solid transparent;
+
+        &:focus {
+          border-bottom: 2px solid #000;
+
+
+        }
+      }
 
       .fa-search {
         padding-right: 1rem;
@@ -78,6 +101,7 @@ a {
     .search {
       background: none;
       border: none;
+
     }
 
     .login-box {
@@ -85,6 +109,7 @@ a {
       justify-content: flex-start;
       align-items: center;
       width: 15%;
+      cursor: pointer;
 
       .login-pic {
         padding-right: 1rem;
@@ -95,6 +120,8 @@ a {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      cursor: pointer;
+
 
       .compare-pic {
         padding-right: 1rem;
@@ -123,7 +150,7 @@ a {
       width: 64%;
       height: 1px;
       background: linear-gradient(to right, #000, $special-yellow);
-      top: 0;
+      top: 30px;
       left: 0;
     }
 
@@ -146,7 +173,10 @@ a {
           flex-wrap: wrap;
           width: 51%;
           position: absolute;
-          top: 3.5rem;
+          top: 1.2rem;
+          padding-top: 1rem;
+          background: $special-yellow;
+
 
           a {
             font-family: Open Sans, sans-serif;
@@ -158,7 +188,8 @@ a {
             display: block;
           }
         }
-        .plus{
+
+        .plus {
           padding-left: 1rem;
         }
       }
@@ -169,8 +200,6 @@ a {
         padding: 0;
         margin: 0;
         display: none;
-
-
       }
 
     }
@@ -185,20 +214,450 @@ a {
   }
 }
 
+//слайдер
+.slider-first-box {
+  position: relative;
+
+  .slider-first {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    z-index: 1000;
+    //padding-bottom: 70px;
+    padding: 0 5rem 5rem 5rem;
+
+    .slider-num {
+      position: absolute;
+      top: -7.5rem;
+      right: 2.5rem;
+      display: block;
+      font-family: Gilroy, sans-serif;
+      font-weight: 800;
+      font-size: 179px;
+      line-height: 219px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      z-index: 1;
+    }
+
+    .slider-item {
+      width: 50%;
+      z-index: 100;
+
+      .slogan {
+        display: flex;
+        font-family: Gilroy, sans-serif;
+        font-weight: 800;
+        font-size: 47px;
+        line-height: 58px;
+      }
+
+      .description {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        padding-bottom: 60px;
+      }
+
+    }
+
+    .characteristic-box {
+      display: flex;
+      padding-top: 30px;
+
+      .characteristic-item {
+        margin-right: 4rem;
+      }
+
+      .characteristic {
+        font-family: Gilroy, sans-serif;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+      }
+
+      .description-characteristic {
+        font-family: Gilroy, sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+
+  .slider-nav {
+    display: flex;
+    position: absolute;
+    bottom: 46%;
+    right: 80px;
+
+    .slider-nav_item {
+      margin: .5rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      display: flex;
+    }
+
+    .active {
+
+    }
+  }
+}
+
+.btn-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  align-items: center;
 
 
+  .btn {
+    position: relative;
+    font-family: Gilroy, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    z-index: 1000;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &:focus {
+      opacity: .3;
+    }
+  }
+
+  .btn-click {
+    display: block;
+    position: absolute;
+    top: 33%;
+    left: 0;
+    width: 220px;
+    height: 8px;
+    background: $special-yellow-dark;
+    z-index: 1;
+    transition: .3s;
+  }
+
+  &:hover .btn-click {
+    height: 40px;
+    top: -10px;
+  }
+
+}
+
+.product {
+  .product-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .product-item {
+      .product-item_pic {
+        width: 160px;
+        height: 160px;
+        background: $special-yellow-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .product-item_description {
+        width: 160px;
+        font-family: Gilroy, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        padding-top: 2rem;
+      }
+    }
+  }
+}
+
+//Второй слайдер
+
+.slider-second {
+
+  background: linear-gradient(0deg, rgb(229, 229, 229) 60%, rgb(255, 255, 255) 50%);
+  padding-top: 70px;
+
+  .services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 55px;
+
+    .services-item {
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      justify-content: center;
+      min-height: 320px;
+
+      .btn-box {
+        margin: 1.2rem 0;
+
+        &:active .btn-click {
+          background: black;
+        }
+
+        &:active .btn {
+          color: $special-yellow;
+          opacity: 1;
+        }
+      }
+
+      &_text {
+        padding-left: 100px;
+
+        .services-header {
+          font-family: Gilroy, sans-serif;
+          font-weight: 800;
+          font-size: 47px;
+          line-height: 58px;
+          letter-spacing: 0.2em;
+        }
+
+        .services-description {
+
+          font-style: normal;
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 30px;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+
+    .border-right {
+      border-right: 7px solid #000;
+
+    }
+  }
+
+}
 
 
+.clients {
+  padding-top: 70px;
+
+  .clients-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+
+    &_item {
+      filter: grayscale(100%);
+      opacity: .3;
+
+      &:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    }
+  }
+}
 
 
+.about {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 70px 0;
+
+  .about-item {
+    position: relative;
+    min-height: 580px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    .about-item_header {
+      font-family: Gilroy, sans-serif;
+      font-weight: 800;
+      font-size: 47px;
+      line-height: 58px;
+      letter-spacing: 0.2em;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 7px;
+        background: #000;
+        position: absolute;
+        top: 0;
+      }
+    }
+
+    .about-item_description {
+      font-family: Opensans, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 30px;
+      letter-spacing: 0.1em;
+    }
+
+    .about-item_list {
+      list-style: none;
+      margin: 0;
+      padding: 2rem 30px;
+
+      a {
+        font-family: Gilroy, sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      li {
+        padding: 10px 15px;
+
+      }
+    }
+
+    .btn-box,
+    .btn-click {
+      width: 260px;
+
+    }
+  }
+
+}
 
 
+.footer-box {
 
+  min-height: 324px;
+  background: $basic-dark;
 
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    //align-items: flex-start;
+    color: #fff;
+    min-height: 324px;
 
+    .left-box {
+      justify-content: space-evenly;
+      align-items: flex-start;
+      .footer_item-address{
+        font-family: opensanslight, sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
 
+    .center-box {
+      justify-content: center;
+      align-items: center;
+      padding-top: 6.5rem;
+    }
 
+    .right-box {
+      justify-content: space-evenly;
+      align-items: flex-end;
 
+      .phone {
+        color: #fff;
+        font-family: opensanslight, sans-serif;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+
+    .footer_item {
+      display: flex;
+      flex-flow: column;
+      //justify-content: space-evenly;
+
+      .footer_item-thing {
+        background: #FFC600;
+        width: 80px;
+        height: 7px;
+      }
+
+      .footer-nav {
+        display: flex;
+        list-style: none;
+
+        .footer-nav_link {
+          font-family: Gilroy,sans-serif;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 22px;
+          color: #fff;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          padding: 10px;
+
+        }
+      }
+
+      .social_net {
+        display: flex;
+
+        .social_net_link {
+          display: flex;
+          background: rgba(255, 255, 255, 0.3);
+          justify-content: center;
+          align-items: center;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          margin: .5rem;
+        }
+      }
+
+      .footer_form {
+        display: flex;
+
+        button {
+          background: none;
+          border: none;
+          color: #fff;
+          font-family: opensanslight, sans-serif;
+
+        }
+
+        .basket {
+          color: #fff;
+          font-family: opensanslight, sans-serif;
+        }
+
+        .footer_form-box {
+          display: flex;
+          flex-direction: row-reverse;
+
+        }
+
+      }
+
+    }
+
+  }
+}
 
 
 

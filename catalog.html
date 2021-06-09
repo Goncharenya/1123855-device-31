@@ -3,65 +3,75 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body-page">
+<!--    шапка-->
 <header class="main-header wrap">
+  <!--  <div class="bg-yellow"></div>-->
   <div class="main-header_logo">
-    <a href="index.html" class="logo">Device</a>
+    <a href="index.html" class="logo"><img src="img/-e-logo.png" alt=""></a>
   </div>
   <div class="main-header_item">
-    <input type="search" name="search" id="search" placeholder="поиск по сайту">
+    <div class="search-box">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
+    </div>
     <label for="search" class="search"></label>
-    <button type="submit" class="login">Войти</button>
-    <button type="submit" class="compare">Сравнить</button>
+    <div class="login-box">
+      <button type="submit" class="login">
+      </button>
+
+      <img src="img/icon_user.png" alt="" class="login-pic">
+      Войти
+
+    </div>
+    <div class="compare-box">
+      <button type="submit" class="compare">
+      </button>
+      <img class="compare-pic" src="img/icon_chart.png" alt="">
+      Сравнить
+
+    </div>
 
     <!--    войти, сравнить и корзина - сомневаюсь в тегах-->
-    <a href="#">Корзина</a>
+    <div class="basket-box">
+      <a href="#" class="basket">
+        <img class="basket-pic" src="img/icon_cart.png" alt="">
+        Корзина</a>
+    </div>
   </div>
 
 
   <nav class="main-nav">
     <ul class="main-nav_list">
-      <li class="main-nav_item"><a href="catalog.html">Каталог товаров</a>
+      <li class="main-nav_item open">
+        <a href="catalog.html" class="link">Каталог товаров</a>
+        <img class="plus" alt="open" src="img/icon_plus.png">
+
         <ul class="main-nav_list-down">
-          <li class="main-nav_item"><a href="catalog.html">Виртуальная реальность</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Моноподы для селфи</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Экшн-камеры</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Фитнес-браслеты</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Умные часы</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Квадракоптер</a></li>
+          <li>
+            <div class="border-top-gradient"></div>
+          </li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Виртуальная реальность</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Фитнес-браслеты</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Квадракоптер</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Моноподы для селфи</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Умные часы</a></li>
+          <li class="main-nav_item-sub"><a href="catalog.html">Экшн-камеры</a></li>
         </ul>
       </li>
       <li class="main-nav_item"><a href="#">Доставка</a></li>
       <li class="main-nav_item"><a href="#">Гарантия</a></li>
       <li class="main-nav_item"><a href="#">Контакты</a></li>
     </ul>
+
 
   </nav>
 
 </header>
-
-
-  <nav class="main-nav">
-    <ul class="main-nav_list">
-      <li class="main-nav_item"><a href="catalog.html">Каталог товаров</a>
-        <ul class="main-nav_list-down">
-          <li class="main-nav_item"><a href="catalog.html">Виртуальная реальность</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Моноподы для селфи</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Экшн-камеры</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Фитнес-браслеты</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Умные часы</a></li>
-          <li class="main-nav_item"><a href="catalog.html">Квадракоптер</a></li>
-        </ul>
-      </li>
-      <li class="main-nav_item"><a href="#">Доставка</a></li>
-      <li class="main-nav_item"><a href="#">Гарантия</a></li>
-      <li class="main-nav_item"><a href="#">Контакты</a></li>
-    </ul>
-
-  </nav>
 
 
 <main class="main-content wrap">
@@ -180,38 +190,76 @@
 </main>
 
 
-<footer class="footer">
-  <div class="footer-item">
-    <a href="index.html">Device</a>
-    <p>Санкт-Петербург, набережная
-      реки Карповки, 5, литера П.
-    </p>
-  </div>
 
-  <div class="footer-item">
-    <ul class="footer-nav">
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Гарантия</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-    <ul class="social_net">
-      <li><a href=""><img src="" alt="facebook"></a></li>
-      <li><a href=""><img src="" alt="instagram"></a></li>
-      <li><a href=""><img src="" alt="twitter"></a></li>
-    </ul>
-  </div>
+<!--  footer-->
 
-  <div class="footer-item">
-    <button type="submit">Войти</button>
-    <button type="submit">Сравнить</button>
-    <a href="#">Корзина</a>
+<footer class="footer-box">
+  <div class="footer wrap">
+    <div class="footer_item left-box">
+      <div class="footer_item-logo">
+        <a href="index.html">
+          <img src="img/logo_footer.png" alt="">
+        </a>
+      </div>
+      <div class="footer_item-address">
+        <p>Санкт-Петербург, набережная <br>
+          реки Карповки, 5, литера П.
+        </p>
+      </div>
+      <div class="footer_item-thing">
 
-    <a href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
+      </div>
+    </div>
 
-    <a href="https://htmlacademy.ru/">html.academy_logo</a>
+    <div class="footer_item center-box">
+      <ul class="footer-nav">
+        <li class="footer-nav_item"><a class="footer-nav_link" href="#">Доставка</a></li>
+        <li class="footer-nav_item"><a class="footer-nav_link" href="#">Гарантия</a></li>
+        <li class="footer-nav_item"><a class="footer-nav_link" href="#">Контакты</a></li>
+      </ul>
+      <ul class="social_net footer-nav">
+        <li class="social_net_item"><a href="#" class="social_net_link"><i class="fa fa-facebook fa-lg"
+                                                                           aria-hidden="true"></i></a></li>
+        <li class="social_net_item"><a href="#" class="social_net_link"><i class="fa fa-instagram fa-lg"
+                                                                           aria-hidden="true"></i></a></li>
+        <li class="social_net_item"><a href="#" class="social_net_link"><i class="fa fa-twitter fa-lg"
+                                                                           aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+
+    <div class="footer_item right-box">
+      <div class="footer_form">
+        <div class="footer_form-box login-box">
+          <button type="submit" class="login">
+            Войти
+          </button>
+          <img src="img/footer_icon_user.png" alt="" class="login-pic">
+        </div>
+        <div class="footer_form-box compare-box">
+          <button type="submit" class="compare">
+            Сравнить
+          </button>
+          <img class="compare-pic" src="img/footer_icon_chart.png" alt="">
+        </div>
+        <!--    войти, сравнить и корзина - сомневаюсь в тегах-->
+        <div class="footer_form-box basket-box">
+          <a href="#" class="basket">
+            <img class="basket-pic" src="img/footer_icon_cart.png" alt="">
+            Корзина</a>
+        </div>
+      </div>
+      <div class="phone-box">
+        <a class="phone" href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
+      </div>
+      <div class="logo_academy-box">
+        <a class="logo_academy" href="https://htmlacademy.ru/">
+          <img src="img/logo_htmlacademy.png" alt="htmlacademy.ru">
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
-
 
 </body>
 </html>

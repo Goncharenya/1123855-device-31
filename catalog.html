@@ -12,26 +12,38 @@
 <header class="main-header wrap">
   <!--  <div class="bg-yellow"></div>-->
   <div class="main-header_logo">
-    <a href="index.html" class="logo"><img src="img/-e-logo.png" alt=""></a>
+    <a href="index.html" class="logo">
+      <svg class="next" width="163" height="35" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+    </a>
   </div>
   <div class="main-header_item">
     <div class="search-box">
-      <i class="fa fa-search" aria-hidden="true"></i>
+      <svg class="search-svg" width="13" height="13" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+      <label for="search" class="search"></label>
       <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
     </div>
-    <label for="search" class="search"></label>
+
     <div class="login-box">
       <button type="submit" class="login">
       </button>
 
-      <img src="img/icon_user.png" alt="" class="login-pic">
+      <svg class="login-pic" width="9" height="10" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#user"></use>
+      </svg>
       Войти
 
     </div>
     <div class="compare-box">
       <button type="submit" class="compare">
       </button>
-      <img class="compare-pic" src="img/icon_chart.png" alt="">
+      <svg class="compare-pic" width="10" height="10" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#compare"></use>
+      </svg>
+
       Сравнить
 
     </div>
@@ -39,7 +51,9 @@
     <!--    войти, сравнить и корзина - сомневаюсь в тегах-->
     <div class="basket-box">
       <a href="#" class="basket">
-        <img class="basket-pic" src="img/icon_cart.png" alt="">
+        <svg class="basket-pic" width="10" height="10" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#bag"></use>
+        </svg>
         Корзина</a>
     </div>
   </div>
@@ -49,8 +63,10 @@
     <ul class="main-nav_list">
       <li class="main-nav_item open">
         <a href="catalog.html" class="link">Каталог товаров</a>
-        <img class="plus" alt="open" src="img/icon_plus.png">
 
+        <svg class="plus" width="16" height="16" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#plus"></use>
+        </svg>
         <ul class="main-nav_list-down">
           <li>
             <div class="border-top-gradient"></div>
@@ -183,7 +199,7 @@
 
           <div class="catalog-cards_item">
             <div class="catalog-cards_pic">
-              <img src="img/catalog-item_1.jpg" alt="Любительская селфи-палка">
+              <img src="img/png/catalog-item_1.jpg" alt="Любительская селфи-палка">
             </div>
             <div class="cards-box">
             <h3 class="catalog-item_tittle">Любительская селфи-палка</h3>
@@ -200,7 +216,7 @@
 
           <div class="catalog-cards_item">
             <div class="catalog-cards_pic">
-              <img src="img/catalog-item_2.jpg" alt="Профессиональная селфи-палка">
+              <img src="img/png/catalog-item_2.jpg" alt="Профессиональная селфи-палка">
             </div>
             <div class="cards-box">
             <h3 class="catalog-item_tittle">Профессиональная селфи-палка</h3>
@@ -217,7 +233,7 @@
 
           <div class="catalog-cards_item">
             <div class="catalog-cards_pic">
-              <img src="img/catalog-item_3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+              <img src="img/png/catalog-item_3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
             </div>
             <div class="cards-box">
               <h3 class="catalog-item_tittle">Непотопляемая селфи-палка</h3>
@@ -232,7 +248,7 @@
 
           <div class="catalog-cards_item">
             <div class="catalog-cards_pic">
-              <img src="img/catalog-item_4.jpg" alt="Селфи-палка «Следуй за мной»">
+              <img src="img/png/catalog-item_4.jpg" alt="Селфи-палка «Следуй за мной»">
             </div>
             <div class="cards-box">
             <h3 class="catalog-item_tittle">Селфи-палка «Следуй за мной»</h3>
@@ -261,7 +277,10 @@
     <div class="footer_item left-box">
       <div class="footer_item-logo">
         <a href="index.html">
-          <img src="img/logo_footer.png" alt="">
+          <svg class="logo-footer" width="163" height="35" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#logo" fill="#FFC600" class="logo-footer"></use>
+          </svg>
+          <!--          <img src="img/png/logo_footer.png" alt="">-->
         </a>
       </div>
       <div class="footer_item-address">
@@ -281,12 +300,21 @@
         <li class="footer-nav_item"><a class="footer-nav_link" href="#">Контакты</a></li>
       </ul>
       <ul class="social_net footer-nav">
-        <li class="social_net_item"><a href="#" class="social_net_link"><i class="fa fa-facebook fa-lg"
-                                                                           aria-hidden="true"></i></a></li>
-        <li class="social_net_item"><a href="#" class="social_net_link"><i class="fa fa-instagram fa-lg"
-                                                                           aria-hidden="true"></i></a></li>
-        <li class="social_net_item"><a href="#" class="social_net_link"><i class="fa fa-twitter fa-lg"
-                                                                           aria-hidden="true"></i></a></li>
+        <li class="social_net_item"><a href="#" class="social_net_link">
+          <svg class="facebook" width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#facebook" class="social_net_facebook"></use>
+          </svg>
+        </a></li>
+        <li class="social_net_item"><a href="#" class="social_net_link">
+          <svg class="instagram" width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#instagram" class="social_net_instagram"></use>
+          </svg>
+          </a></li>
+        <li class="social_net_item"><a href="#" class="social_net_link">
+          <svg class="twitter" width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#twitter" class="social_net_twitter"></use>
+          </svg>
+        </a></li>
       </ul>
     </div>
 
@@ -297,19 +325,29 @@
           <button type="submit" class="login">
             Войти
           </button>
-          <img src="img/footer_icon_user.png" alt="" class="login-pic">
+          <svg class="login-pic" width="20" height="10" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#user" class="login-pic_footer"></use>
+          </svg>
+
         </div>
         <div class="footer_form-box compare-box">
           <button type="submit" class="compare">
             Сравнить
           </button>
-          <img class="compare-pic" src="img/footer_icon_chart.png" alt="">
+          <svg class="compare-pic" width="20" height="10" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#compare" class="compare-pic-footer"></use>
+          </svg>
+
         </div>
         <!--    войти, сравнить и корзина - сомневаюсь в тегах-->
         <div class="footer_form-box basket-box">
           <a href="#" class="basket">
-            <img class="basket-pic" src="img/footer_icon_cart.png" alt="">
-            Корзина</a>
+            <svg class="basket-pic" width="20" height="10" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#bag" class="basket-pic-footer">
+              </use>
+            </svg>
+            Корзина
+          </a>
         </div>
       </div>
       <div class="phone-box">
@@ -317,12 +355,11 @@
       </div>
       <div class="logo_academy-box">
         <a class="logo_academy" href="https://htmlacademy.ru/">
-          <img src="img/logo_htmlacademy.png" alt="htmlacademy.ru">
+          <img src="img/png/logo_htmlacademy.png" alt="htmlacademy.ru">
         </a>
       </div>
     </div>
   </div>
 </footer>
-
 </body>
 </html>

@@ -12,26 +12,38 @@
 <header class="main-header wrap">
   <!--  <div class="bg-yellow"></div>-->
   <div class="main-header_logo">
-    <a href="index.html" class="logo"><img src="img/-e-logo.png" alt=""></a>
+    <a href="index.html" class="logo">
+      <svg class="next" width="163" height="35" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+    </a>
   </div>
   <div class="main-header_item">
     <div class="search-box">
-      <i class="fa fa-search" aria-hidden="true"></i>
+      <svg class="search-svg" width="13" height="13" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+      <label for="search" class="search"></label>
       <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
     </div>
-    <label for="search" class="search"></label>
+
     <div class="login-box">
       <button type="submit" class="login">
       </button>
 
-      <img src="img/icon_user.png" alt="" class="login-pic">
+      <svg class="login-pic" width="9" height="10" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#user"></use>
+      </svg>
       Войти
 
     </div>
     <div class="compare-box">
       <button type="submit" class="compare">
       </button>
-      <img class="compare-pic" src="img/icon_chart.png" alt="">
+      <svg class="compare-pic" width="10" height="10" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#compare"></use>
+      </svg>
+
       Сравнить
 
     </div>
@@ -39,7 +51,9 @@
     <!--    войти, сравнить и корзина - сомневаюсь в тегах-->
     <div class="basket-box">
       <a href="#" class="basket">
-        <img class="basket-pic" src="img/icon_cart.png" alt="">
+        <svg class="basket-pic" width="10" height="10" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#bag"></use>
+        </svg>
         Корзина</a>
     </div>
   </div>
@@ -49,8 +63,10 @@
     <ul class="main-nav_list">
       <li class="main-nav_item open">
         <a href="catalog.html" class="link">Каталог товаров</a>
-        <img class="plus" alt="open" src="img/icon_plus.png">
 
+        <svg class="plus" width="16" height="16" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#plus"></use>
+        </svg>
         <ul class="main-nav_list-down">
           <li>
             <div class="border-top-gradient"></div>
@@ -79,12 +95,12 @@
 
   <!--  Первый слайд-->
 
-  <div class="slider-first active">
+  <div class="slider-first slide">
     <span class="slider-num">03</span>
-    <div class="slider-item">
-      <img src="img/slider-3.png" alt="квадрвкоптер" height="334" width="526">
+    <div class="slider-item slider-pic">
+      <img src="img/png/slider-3.png" alt="квадрвкоптер" height="334" width="526">
     </div>
-    <div class="slider-item">
+    <div class="slider-item slider-text">
       <span class="slogan">Порхает как бабочка, <br> жалит как пчела!</span>
       <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
         мощным лазером, замаскированным под стандартную камеру.
@@ -106,73 +122,74 @@
     </div>
   </div>
 
-  <!--  Второй слайд-->
+  <!--    Второй слайд-->
 
-  <!--  <div class="slider-first">-->
-  <!--    <span class="slider-num">02</span>-->
-  <!--    <div class="slider-item">-->
-  <!--      <img src="img/slider-2.png" alt="фитнес-браслет" height="483" width="345">-->
-  <!--    </div>-->
-  <!--    <div class="slider-item">-->
-  <!--      <span class="slogan">Худеем<br> правильно!</span>-->
-  <!--      <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>-->
-  <!--        не пропускать занятия и соблюдать диету.-->
-  <!--      </p>-->
-  <!--      <div class="btn-box">-->
-  <!--        <a href="catalog.html" class="btn">подробнее</a>-->
-  <!--        <div class="btn-click"></div>-->
-  <!--      </div>-->
-  <!--      <div class="characteristic-box">-->
-  <!--        <div class="characteristic-item">-->
-  <!--          <p class="characteristic">48 часов</p>-->
-  <!--          <p class="description-characteristic">Без подзарядки</p>-->
-  <!--        </div>-->
+  <div class="slider-first active">
+    <span class="slider-num">02</span>
+    <div class="slider-item slider-pic">
+      <img src="img/png/slider-2.png" alt="фитнес-браслет" height="483" width="345">
+    </div>
+    <div class="slider-item slider-text">
+      <span class="slogan">Худеем<br> правильно!</span>
+      <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+        не пропускать занятия и соблюдать диету.
+      </p>
+      <div class="btn-box">
+        <a href="catalog.html" class="btn">подробнее</a>
+        <div class="btn-click"></div>
+      </div>
+      <div class="characteristic-box">
+        <div class="characteristic-item">
+          <p class="characteristic">48 часов</p>
+          <p class="description-characteristic">Без подзарядки</p>
+        </div>
 
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--  </div>-->
+      </div>
+    </div>
+  </div>
 
-  <!--  Третий слайд-->
+  <!--    Третий слайд-->
 
-  <!--  <div class="slider-first">-->
-  <!--    <span class="slider-num">01</span>-->
-  <!--    <div class="slider-item">-->
-  <!--      <img src="img/slider-1.png" alt="моноподы для селфи" height="486" width="384">-->
-  <!--    </div>-->
-  <!--    <div class="slider-item">-->
-  <!--      <span class="slogan">Делай селфи, <br> как Бен Стиллер!</span>-->
-  <!--      <p class="description">Самая длинная палка для селфи доступна в нашем магазине. <br>-->
-  <!--        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.-->
-  <!--      </p>-->
-  <!--      <div class="btn-box">-->
-  <!--        <a href="catalog.html" class="btn">подробнее</a>-->
-  <!--        <div class="btn-click"></div>-->
-  <!--      </div>-->
-  <!--      <div class="characteristic-box">-->
-  <!--        <div class="characteristic-item">-->
-  <!--          <p class="characteristic">8,5 м</p>-->
-  <!--          <p class="description-characteristic">Длина палки</p>-->
-  <!--        </div>-->
-  <!--        <div class="characteristic-item">-->
-  <!--          <p class="characteristic">5 кг</p>-->
-  <!--          <p class="description-characteristic">Вес палки</p>-->
-  <!--        </div>-->
-  <!--        <div class="characteristic-item">-->
-  <!--          <p class="characteristic">Карбон</p>-->
-  <!--          <p class="description-characteristic">Материал</p>-->
-  <!--        </div>-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--  </div>-->
+  <div class="slider-first slide">
+    <span class="slider-num">01</span>
+    <div class="slider-item slider-pic">
+      <img src="img/png/slider-1.png" alt="моноподы для селфи" height="486" width="384">
+    </div>
+    <div class="slider-item slider-text">
+      <span class="slogan">Делай селфи, <br> как Бен Стиллер!</span>
+      <p class="description">Самая длинная палка для селфи доступна в нашем магазине. <br>
+        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+      </p>
+      <div class="btn-box">
+        <a href="catalog.html" class="btn">подробнее</a>
+        <div class="btn-click"></div>
+      </div>
+      <div class="characteristic-box">
+        <div class="characteristic-item">
+          <p class="characteristic">8,5 м</p>
+          <p class="description-characteristic">Длина палки</p>
+        </div>
+        <div class="characteristic-item">
+          <p class="characteristic">5 кг</p>
+          <p class="description-characteristic">Вес палки</p>
+        </div>
+        <div class="characteristic-item">
+          <p class="characteristic">Карбон</p>
+          <p class="description-characteristic">Материал</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!--( не знаю надо ли верстать навигацию для слайдера)-->
 
 
   <div class="slider-nav">
-    <div class="slider-nav_item active"></div>
-    <div class="slider-nav_item"></div>
-    <div class="slider-nav_item"></div>
+    <button type="button" class="slider-nav_item current" aria-label="Первый слайд"></button>
+    <button type="button" class="slider-nav_item" aria-label="Второй слайд"></button>
+    <button type="button" class="slider-nav_item" aria-label="Третий слайд"></button>
+
   </div>
 </section>
 
@@ -183,7 +200,9 @@
   <ul class="product-list">
     <li class="product-item">
       <div class="product-item_pic">
-        <img src="img/virtual.png" alt="Виртуальная реальность" height="55" width="97">
+        <svg class="virt" width="97" height="55" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#virt"></use>
+        </svg>
       </div>
       <div class="product-item_description">
         <a href="catalog.html">Виртуальная реальность</a>
@@ -191,7 +210,9 @@
     </li>
     <li class="product-item">
       <div class="product-item_pic">
-        <img src="img/monopod.png" alt="Моноподы для селфи" width="86" height="117">
+        <svg class="monopod" width="86" height="117" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#monopod"></use>
+        </svg>
       </div>
       <div class="product-item_description">
         <a href="catalog.html">Моноподы для селфи</a>
@@ -199,7 +220,10 @@
     </li>
     <li class="product-item">
       <div class="product-item_pic">
-        <img src="img/camera.png" alt="Экшн-камеры" height="87" width="71">
+        <svg class="camera" width="71" height="87" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#camera"></use>
+        </svg>
+
       </div>
       <div class="product-item_description">
         <a href="catalog.html">Экшн-камеры</a>
@@ -207,7 +231,9 @@
     </li>
     <li class="product-item">
       <div class="product-item_pic">
-        <img src="img/fitness_watch.png" alt="Фитнес-браслеты" width="107" height="65">
+        <svg class="fitness" width="107" height="65" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#fitness"></use>
+        </svg>
       </div>
       <div class="product-item_description">
         <a href="catalog.html">Фитнес-браслеты</a>
@@ -215,7 +241,10 @@
     </li>
     <li class="product-item">
       <div class="product-item_pic">
-        <img src="img/smart_watch.png" alt="Умные часы" height="98" width="56">
+        <svg class="watch" width="56" height="98" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#watch"></use>
+        </svg>
+
       </div>
       <div class="product-item_description">
         <a href="catalog.html">Умные часы</a>
@@ -223,7 +252,9 @@
     </li>
     <li class="product-item">
       <div class="product-item_pic">
-        <img src="img/quadcopter.png" alt="Квадрокоптеры" width="132" height="69">
+        <svg class="quadrotor" width="132" height="69" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#quadrotor"></use>
+        </svg>
       </div>
       <div class="product-item_description">
         <a href="catalog.html">Квадрокоптеры</a>
@@ -232,115 +263,96 @@
   </ul>
 </section>
 
-<!--  второй слайдер (жалкая попытка обойтись без js - стоит ли?))-->
 
-<!--<section class="slider-second wrap">-->
-<!--  <label for="delivery">Доставка</label>-->
-<!--  <input type="checkbox" id="delivery">-->
-<!--  <div class="block-text">-->
-<!--    <h2>Доставка</h2>-->
-<!--    <p>Мы с удовольствием доставим ваш товар прямо к вашему-->
-<!--      подъезду совершенно бесплатно! Ведь мы неплохо-->
-<!--      заработаем, поднимая его на ваш этаж.</p>-->
-<!--  </div>-->
-<!--  <div class="block-img">-->
-<!--    <img src="#" alt="бегущий чел">-->
-<!--  </div>-->
+<section class="slider-second-container">
 
+  <div class="slider-second wrap">
 
-<!--  <label for="guarantee">Гарантия</label>-->
-<!--  <input type="checkbox" id="guarantee">-->
-<!--  <div class="block-text">-->
-<!--    <h2>Гарантия</h2>-->
-<!--    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —-->
-<!--      не переживайте, мы выдадим вам новый.-->
-<!--      Товар, не дом, конечно же.</p>-->
-<!--  </div>-->
-<!--  <div class="block-img">-->
-<!--    <img src="#" alt="бегущий чел">-->
-<!--  </div>-->
-
-<!--  <label for="credit">Кредит</label>-->
-<!--  <input type="checkbox" id="credit">-->
-<!--  <div class="block-text">-->
-<!--    <h2>Кредит</h2>-->
-<!--    <p>Залезть в долговую яму стало проще! Кредитные консультанты-->
-<!--      подберут для вас наиболее выгодные-->
-<!--      условия кредита. Выгодные для нашего банка, разумеется.</p>-->
-<!--  </div>-->
-<!--  <div class="block-img">-->
-<!--    <img src="#" alt="бегущий чел">-->
-<!--  </div>-->
-
-<!--</section>-->
-
-
-<section class="slider-second">
-
-  <!--  Доставка-->
-
-  <div class="services wrap">
-    <div class="services-item border-right">
-      <div class="btn-box">
-        <button class="btn">Доставка</button>
-        <div class="btn-click"></div>
-      </div>
-      <div class="btn-box">
-        <button class="btn">Гарантия</button>
-        <div class="btn-click"></div>
-      </div>
-      <div class="btn-box">
-        <button class="btn">Кредит</button>
-        <div class="btn-click"></div>
+    <div class="services-menu wrap">
+      <div class="services-item border-right">
+        <div class="btn-box">
+          <button class="btn">Доставка</button>
+          <div class="btn-click"></div>
+        </div>
+        <div class="btn-box">
+          <button class="btn">Гарантия</button>
+          <div class="btn-click"></div>
+        </div>
+        <div class="btn-box">
+          <button class="btn">Кредит</button>
+          <div class="btn-click"></div>
+        </div>
       </div>
     </div>
 
-    <div class="services-item">
-      <div class="services-item_text">
-        <h2 class="services-header">Доставка</h2>
-        <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему
-          подъезду совершенно бесплатно! Ведь мы неплохо
-          заработаем, поднимая его на ваш этаж.</p>
+
+    <!--  <div>-->
+    <!--    <div>menu</div>-->
+    <!--    <div>-->
+    <!--      <div style="display: none">1</div>-->
+    <!--      <div style="display: block">2</div>-->
+    <!--      <div style="display: none">3</div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+
+    <!--  Доставка-->
+
+    <div class="box-slider">
+      <div class="services slider">
+        <div class="services-item">
+          <div class="services-item_text">
+            <h2 class="services-header">Доставка</h2>
+            <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему
+              подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p>
+          </div>
+        </div>
+        <div class="services-item">
+          <svg class="delivery" width="136" height="164" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#delivery"></use>
+          </svg>
+        </div>
       </div>
-    </div>
-    <div class="services-item">
-      <img src="img/delivery.png" alt="бегущий чел">
+
+
+      <!--      Гарантия    -->
+
+      <div class="services slider">
+        <div class="services-item">
+          <div class="services-item_text">
+            <h2 class="services-header">Гарантия</h2>
+            <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом
+              не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+          </div>
+        </div>
+        <div class="services-item">
+          <svg class="warranty" width="171" height="195" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#warranty"></use>
+          </svg>
+        </div>
+      </div>
+
+      <!--           Кредит      -->
+
+      <div class="services active">
+        <div class="services-item">
+          <div class="services-item_text">
+            <h2 class="services-header">Кредит</h2>
+            <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты
+              подберут для вас наиболее выгодные
+              условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+        </div>
+        <div class="services-item">
+          <svg class="credit" width="156" height="188" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#credit"></use>
+          </svg>
+        </div>
+
+      </div>
     </div>
   </div>
-
-  <!--    Гарантия    -->
-
-  <!--  <div class="services wrap">-->
-  <!--    <div class="services-item">-->
-  <!--      <div class="services-item_text">-->
-  <!--        <h2 class="services-header">Гарантия</h2>-->
-  <!--        <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом-->
-  <!--          не переживайте, мы выдадим вам новый.-->
-  <!--          Товар, не дом, конечно же.</p>-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--    <div class="services-item">-->
-  <!--      <img src="img/warranty.png" alt="инфо">-->
-  <!--    </div>-->
-  <!--  </div>-->
-
-  <!--         Кредит      -->
-
-  <!--  <div class="services wrap">-->
-  <!--    <div class="services-item">-->
-  <!--      <div class="services-item_text">-->
-  <!--        <h2 class="services-header">Кредит</h2>-->
-  <!--        <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты-->
-  <!--          подберут для вас наиболее выгодные-->
-  <!--          условия кредита. Выгодные для нашего банка, разумеется.</p>-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--      <div class="services-item">-->
-  <!--        <img src="img/credit.png" alt="кредит">-->
-  <!--      </div>-->
-
-  <!--  </div>-->
-
 </section>
 
 
@@ -349,10 +361,10 @@
 <section class="clients wrap">
 
   <ul class="clients-list">
-    <li class="clients-list_item"><a href=""><img src="img/logo1.png" alt="logo"></a></li>
-    <li class="clients-list_item"><a href=""><img src="img/logo2.png" alt="logo"></a></li>
-    <li class="clients-list_item"><a href=""><img src="img/logo3.png" alt="logo"></a></li>
-    <li class="clients-list_item"><a href=""><img src="img/logo4.png" alt="logo"></a></li>
+    <li class="clients-list_item"><a href=""><img src="img/png/logo1.png" alt="logo"></a></li>
+    <li class="clients-list_item"><a href=""><img src="img/png/logo2.png" alt="logo"></a></li>
+    <li class="clients-list_item"><a href=""><img src="img/png/logo3.png" alt="logo"></a></li>
+    <li class="clients-list_item"><a href=""><img src="img/png/logo4.png" alt="logo"></a></li>
   </ul>
 </section>
 
@@ -427,7 +439,10 @@
     <div class="footer_item left-box">
       <div class="footer_item-logo">
         <a href="index.html">
-          <img src="img/logo_footer.png" alt="">
+          <svg class="logo-footer" width="163" height="35" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#logo" fill="#FFC600" class="logo-footer"></use>
+          </svg>
+          <!--          <img src="img/png/logo_footer.png" alt="">-->
         </a>
       </div>
       <div class="footer_item-address">
@@ -447,12 +462,21 @@
         <li class="footer-nav_item"><a class="footer-nav_link" href="#">Контакты</a></li>
       </ul>
       <ul class="social_net footer-nav">
-        <li class="social_net_item"><a href="#" class="social_net_link"><i class="fa fa-facebook fa-lg"
-                                                                           aria-hidden="true"></i></a></li>
-        <li class="social_net_item"><a href="#" class="social_net_link"><i class="fa fa-instagram fa-lg"
-                                                                           aria-hidden="true"></i></a></li>
-        <li class="social_net_item"><a href="#" class="social_net_link"><i class="fa fa-twitter fa-lg"
-                                                                           aria-hidden="true"></i></a></li>
+        <li class="social_net_item"><a href="#" class="social_net_link">
+          <svg class="facebook" width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#facebook" class="social_net_facebook"></use>
+          </svg>
+        </a></li>
+        <li class="social_net_item"><a href="#" class="social_net_link">
+          <svg class="instagram" width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#instagram" class="social_net_instagram"></use>
+          </svg>
+          </a></li>
+        <li class="social_net_item"><a href="#" class="social_net_link">
+          <svg class="twitter" width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#twitter" class="social_net_twitter"></use>
+          </svg>
+        </a></li>
       </ul>
     </div>
 
@@ -463,19 +487,29 @@
           <button type="submit" class="login">
             Войти
           </button>
-          <img src="img/footer_icon_user.png" alt="" class="login-pic">
+          <svg class="login-pic" width="20" height="10" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#user" class="login-pic_footer"></use>
+          </svg>
+
         </div>
         <div class="footer_form-box compare-box">
           <button type="submit" class="compare">
             Сравнить
           </button>
-          <img class="compare-pic" src="img/footer_icon_chart.png" alt="">
+          <svg class="compare-pic" width="20" height="10" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#compare" class="compare-pic-footer"></use>
+          </svg>
+
         </div>
         <!--    войти, сравнить и корзина - сомневаюсь в тегах-->
         <div class="footer_form-box basket-box">
           <a href="#" class="basket">
-            <img class="basket-pic" src="img/footer_icon_cart.png" alt="">
-            Корзина</a>
+            <svg class="basket-pic" width="20" height="10" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#bag" class="basket-pic-footer">
+              </use>
+            </svg>
+            Корзина
+          </a>
         </div>
       </div>
       <div class="phone-box">
@@ -483,7 +517,7 @@
       </div>
       <div class="logo_academy-box">
         <a class="logo_academy" href="https://htmlacademy.ru/">
-          <img src="img/logo_htmlacademy.png" alt="htmlacademy.ru">
+          <img src="img/png/logo_htmlacademy.png" alt="htmlacademy.ru">
         </a>
       </div>
     </div>

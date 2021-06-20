@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body-page">
 <!--    шапка-->
-<header class="main-header wrap">
+<header class="main-header header-catalog wrap">
   <!--  <div class="bg-yellow"></div>-->
   <div class="main-header_logo">
     <a href="index.html" class="logo">
@@ -28,23 +30,22 @@
     </div>
 
     <div class="login-box">
-      <button type="submit" class="login">
+      <button type="submit" class="login">Войти
       </button>
 
       <svg class="login-pic" width="9" height="10" aria-hidden="true">
         <use xlink:href="img/sprite.svg#user"></use>
       </svg>
-      Войти
+
 
     </div>
     <div class="compare-box">
-      <button type="submit" class="compare">
+      <button type="submit" class="compare">Сравнить
       </button>
       <svg class="compare-pic" width="10" height="10" aria-hidden="true">
         <use xlink:href="img/sprite.svg#compare"></use>
       </svg>
 
-      Сравнить
 
     </div>
 
@@ -71,23 +72,24 @@
           <li>
             <div class="border-top-gradient"></div>
           </li>
-          <li class="main-nav_item-sub"><a href="catalog.html">Виртуальная реальность</a></li>
-          <li class="main-nav_item-sub"><a href="catalog.html">Фитнес-браслеты</a></li>
-          <li class="main-nav_item-sub"><a href="catalog.html">Квадракоптер</a></li>
-          <li class="main-nav_item-sub"><a href="catalog.html">Моноподы для селфи</a></li>
-          <li class="main-nav_item-sub"><a href="catalog.html">Умные часы</a></li>
-          <li class="main-nav_item-sub"><a href="catalog.html">Экшн-камеры</a></li>
+          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Виртуальная реальность</a></li>
+          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Фитнес-браслеты</a></li>
+          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Квадракоптер</a></li>
+          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Моноподы для селфи</a></li>
+          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Умные часы</a></li>
+          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Экшн-камеры</a></li>
         </ul>
       </li>
-      <li class="main-nav_item"><a href="#">Доставка</a></li>
-      <li class="main-nav_item"><a href="#">Гарантия</a></li>
-      <li class="main-nav_item"><a href="#">Контакты</a></li>
+      <li class="main-nav_item"><a class="link" href="#">Доставка</a></li>
+      <li class="main-nav_item"><a class="link" href="#">Гарантия</a></li>
+      <li class="main-nav_item"><a class="link" href="#">Контакты</a></li>
     </ul>
 
 
   </nav>
 
 </header>
+
 
 <!--  слайдер-->
 
@@ -98,7 +100,7 @@
   <div class="slider-first slide">
     <span class="slider-num">03</span>
     <div class="slider-item slider-pic">
-      <img src="img/png/slider-3.png" alt="квадрвкоптер" height="334" width="526">
+      <img class="quadrotor" src="img/png/slider-3.png" alt="квадрвкоптер" width="526" height="334">
     </div>
     <div class="slider-item slider-text">
       <span class="slogan">Порхает как бабочка, <br> жалит как пчела!</span>
@@ -124,7 +126,7 @@
 
   <!--    Второй слайд-->
 
-  <div class="slider-first active">
+  <div class="slider-first active-slider">
     <span class="slider-num">02</span>
     <div class="slider-item slider-pic">
       <img src="img/png/slider-2.png" alt="фитнес-браслет" height="483" width="345">
@@ -186,8 +188,9 @@
 
 
   <div class="slider-nav">
-    <button type="button" class="slider-nav_item current" aria-label="Первый слайд"></button>
-    <button type="button" class="slider-nav_item" aria-label="Второй слайд"></button>
+    <button type="button" class="slider-nav_item" aria-label="Первый слайд">
+    </button>
+    <button type="button" class="slider-nav_item current" aria-label="Второй слайд"></button>
     <button type="button" class="slider-nav_item" aria-label="Третий слайд"></button>
 
   </div>
@@ -393,7 +396,7 @@
 
 
   <div class="about-item about-contact">
-    <h2 class="about-item_header">Контакты</h2>
+    <h2 class="about-item_header _header-contact">Контакты</h2>
     <p class="about-item_description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
       проверить работоспособность покупки. Всякое бывает.</p>
     <iframe
@@ -517,7 +520,10 @@
       </div>
       <div class="logo_academy-box">
         <a class="logo_academy" href="https://htmlacademy.ru/">
-          <img src="img/png/logo_htmlacademy.png" alt="htmlacademy.ru">
+          <svg class="html_academy" width="115" height="33" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#html_academy" class="html_academy-footer">
+            </use>
+          </svg>
         </a>
       </div>
     </div>
@@ -525,6 +531,6 @@
 </footer>
 
 <!--    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
-
+<script src="js/script.js"></script>
 </body>
 </html>

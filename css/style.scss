@@ -31,7 +31,7 @@ $special-green: #91C92F;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  font-family: Opensans, sans-serif;
+  font-family: Opensans, sans-serif Arial, Helvetica, sans-serif;
   //background: url("../img/index.jpg") center / cover;
   //opacity: .2;
   box-sizing: border-box;
@@ -267,8 +267,13 @@ a {
 
     .slider-text {
       padding-top: 4.3rem;
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      justify-content: center;
     }
     .slider-pic{
+      text-align: center;
       img{
         padding: 2rem 0 0 90px;
       }
@@ -1092,6 +1097,17 @@ a {
                 border-radius: 50%;
                 border: 8px solid #fff;
                 position: absolute;
+                .price{
+                  display: block;
+                  width: 60px;
+                  padding-top: 1rem;
+                  font-family: GilroyLight, sans-serif;
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 14px;
+                  line-height: 16px;
+
+                }
 
                 &-from {
                   top: -10px;

@@ -740,6 +740,37 @@ a {
     height: 550px;
     background: #FFFFFF;
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+    .close{
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: $special-yellow-dark;
+      opacity: .5;
+      right: 23px;
+      top: 19px;
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+
+      &:before,
+      &:after{
+        content: "";
+        width: 2px;
+        height: 25px;
+        background: #fff;
+        position: absolute;
+        top: 30%;
+        left: 47%;
+      }
+      &:after{
+        transform: rotate(45deg);
+      }
+      &:before{
+        transform: rotate(-45deg);
+      }
+    }
 
     .form {
       display: flex;
@@ -771,11 +802,19 @@ a {
         .message {
           width: 360px;
           height: 50px;
-          border: 0;
+
           outline: none;
           background: #F2F2F2;
           display: flex;
           padding-left: 2rem;
+          box-sizing: border-box;
+          border: 2px solid transparent;
+           &:hover{
+             background: #EAEAEA;
+           }
+          &:focus{
+            border: 2px solid #F7E296;
+          }
 
           &::placeholder {
             padding: 1rem 0 0 1rem;

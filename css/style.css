@@ -364,6 +364,7 @@
 
 .btn-box {
   display: inline-block;
+  vertical-align: middle;
 }
 .btn-box .btn {
   font-family: Gilroy, sans-serif;

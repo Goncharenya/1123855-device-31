@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style_min.css">
 </head>
 <body class="body-page">
-<!--    шапка-->
-<header class="main-header header-catalog wrap">
 
+<!--    шапка-->
+
+<header class="main-header header-catalog wrap">
   <div class="main-header_logo">
-    <a href="index.html" class="logo">
+    <a href="index.html" class="logo link-special">
       <svg class="next" width="163" height="35" aria-hidden="true">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
@@ -28,77 +27,66 @@
       <label for="search" class="search"></label>
       <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
     </div>
-
     <div class="login-box">
-      <button type="submit" class="login">Войти
-      </button>
-
+      <a href="#" class="login link-special">Войти
+      </a>
       <svg class="login-pic" width="9" height="10" aria-hidden="true">
         <use xlink:href="img/sprite.svg#user"></use>
       </svg>
-
-
     </div>
     <div class="compare-box">
-      <button type="submit" class="compare">Сравнить
-      </button>
+      <a href="#" class="compare link-special">Сравнить
       <svg class="compare-pic" width="10" height="10" aria-hidden="true">
         <use xlink:href="img/sprite.svg#compare"></use>
       </svg>
-
-
+      </a>
     </div>
-
-
     <div class="basket-box">
-      <a href="#" class="basket">
+      <a href="#" class="basket link-special">
         <svg class="basket-pic" width="10" height="10" aria-hidden="true">
           <use xlink:href="img/sprite.svg#bag"></use>
         </svg>
         Корзина</a>
     </div>
   </div>
-
-
   <nav class="main-nav">
     <ul class="main-nav_list">
       <li class="main-nav_item open">
-        <a href="catalog.html" class="link">Каталог товаров</a>
-
+        <a href="catalog.html" class="link link-special main-nav_link">Каталог товаров</a>
         <svg class="plus" width="16" height="16" aria-hidden="true">
           <use xlink:href="img/sprite.svg#plus"></use>
         </svg>
-        <ul class="main-nav_list-down">
-          <li>
-            <div class="border-top-gradient"></div>
+        <ul class="main-nav_list-down row-one">
+          <li class="main-nav_item-sub"><a class="sub-menu-link link-special" href="catalog.html">Виртуальная
+            реальность</a></li>
+          <li class="main-nav_item-sub"><a class="sub-menu-link link-special" href="catalog.html">Фитнес-браслеты</a>
           </li>
-          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Виртуальная реальность</a></li>
-          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Фитнес-браслеты</a></li>
-          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Квадракоптер</a></li>
-          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Моноподы для селфи</a></li>
-          <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Умные часы</a></li>
+          <li class="main-nav_item-sub"><a class="sub-menu-link link-special" href="catalog.html">Квадракоптер</a></li>
+        </ul>
+        <ul class="main-nav_list-down row-two">
+          <li class="main-nav_item-sub"><a class="sub-menu-link link-special" href="catalog.html">Моноподы для селфи</a>
+          </li>
+          <li class="main-nav_item-sub"><a class="sub-menu-link link-special" href="catalog.html">Умные часы</a></li>
+        </ul>
+        <ul class="main-nav_list-down row-three">
           <li class="main-nav_item-sub"><a class="sub-menu-link" href="catalog.html">Экшн-камеры</a></li>
         </ul>
       </li>
-      <li class="main-nav_item"><a class="link" href="#">Доставка</a></li>
-      <li class="main-nav_item"><a class="link" href="#">Гарантия</a></li>
-      <li class="main-nav_item"><a class="link" href="#">Контакты</a></li>
+      <li class="main-nav_item"><a class="link link-special main-nav_link" href="#">Доставка</a></li>
+      <li class="main-nav_item"><a class="link link-special main-nav_link" href="#">Гарантия</a></li>
+      <li class="main-nav_item"><a class="link link-special main-nav_link" href="#">Контакты</a></li>
     </ul>
-
-
   </nav>
-
 </header>
-
 
 <!--  слайдер-->
 
-<section class="slider-first-box wrap">
-
+<section class="slider-first-box">
   <h1 class="visually-hidden">DEVICE</h1>
+
   <!--  Первый слайд-->
 
-  <div class="slider-first slide">
+  <div class="slider-first wrap slide">
     <span class="slider-num">03</span>
     <div class="slider-item slider-pic">
       <img class="quadrotor" src="img/png/slider-3.png" alt="квадрвкоптер" width="526" height="334">
@@ -108,10 +96,7 @@
       <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
         мощным лазером, замаскированным под стандартную камеру.
       </p>
-      <div class="btn-box">
-        <button class="btn">подробнее</button>
-        <div class="btn-click"></div>
-      </div>
+      <a class="btn">подробнее</a>
       <div class="characteristic-box">
         <div class="characteristic-item">
           <p class="characteristic">800 м</p>
@@ -127,7 +112,7 @@
 
   <!--    Второй слайд-->
 
-  <div class="slider-first active-slider">
+  <div class="slider-first active-slider wrap">
     <span class="slider-num">02</span>
     <div class="slider-item slider-pic">
       <img src="img/png/slider-2.png" alt="фитнес-браслет" height="483" width="345">
@@ -139,7 +124,6 @@
       </p>
       <div class="btn-box">
         <a href="catalog.html" class="btn">подробнее</a>
-        <div class="btn-click"></div>
       </div>
       <div class="characteristic-box">
         <div class="characteristic-item">
@@ -153,7 +137,7 @@
 
   <!--    Третий слайд-->
 
-  <div class="slider-first slide">
+  <div class="slider-first slide wrap">
     <span class="slider-num">01</span>
     <div class="slider-item slider-pic">
       <img src="img/png/slider-1.png" alt="моноподы для селфи" height="486" width="384">
@@ -165,7 +149,6 @@
       </p>
       <div class="btn-box">
         <a href="catalog.html" class="btn">подробнее</a>
-        <div class="btn-click"></div>
       </div>
       <div class="characteristic-box">
         <div class="characteristic-item">
@@ -184,19 +167,15 @@
     </div>
   </div>
 
-
   <!--навигация для слайдера)-->
-
 
   <div class="slider-nav">
     <button type="button" class="slider-nav_item" aria-label="Первый слайд">
     </button>
     <button type="button" class="slider-nav_item current" aria-label="Второй слайд"></button>
     <button type="button" class="slider-nav_item" aria-label="Третий слайд"></button>
-
   </div>
 </section>
-
 
 <!--    продукция-->
 
@@ -227,7 +206,6 @@
         <svg class="camera" width="71" height="87" aria-hidden="true">
           <use xlink:href="img/sprite.svg#camera"></use>
         </svg>
-
       </div>
       <div class="product-item_description">
         <a href="catalog.html">Экшн-камеры</a>
@@ -248,7 +226,6 @@
         <svg class="watch" width="56" height="98" aria-hidden="true">
           <use xlink:href="img/sprite.svg#watch"></use>
         </svg>
-
       </div>
       <div class="product-item_description">
         <a href="catalog.html">Умные часы</a>
@@ -267,34 +244,29 @@
   </ul>
 </section>
 
+<!--slider-second-->
 
 <section class="slider-second-container">
-
   <div class="slider-second wrap">
-
-    <div class="services-menu wrap">
-      <div class="services-item border-right">
+    <div class="services-menu">
+      <div class="services-item services-item-btn">
         <div class="btn-box">
-          <button class="btn">Доставка</button>
-          <div class="btn-click"></div>
+          <button class="btn-slider">Доставка</button>
         </div>
         <div class="btn-box">
-          <button class="btn">Гарантия</button>
-          <div class="btn-click"></div>
+          <button class="btn-slider">Гарантия</button>
         </div>
         <div class="btn-box">
-          <button class="btn">Кредит</button>
-          <div class="btn-click"></div>
+          <button class="btn-slider">Кредит</button>
         </div>
       </div>
     </div>
-
 
     <!--  Доставка-->
 
     <div class="box-slider">
       <div class="services active">
-        <div class="services-item">
+        <div class="services-item services-item-delivery">
           <div class="services-item_text">
             <h2 class="services-header">Доставка</h2>
             <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему
@@ -309,11 +281,10 @@
         </div>
       </div>
 
-
       <!--      Гарантия    -->
 
       <div class="services slider">
-        <div class="services-item">
+        <div class="services-item services-item-warranty">
           <div class="services-item_text">
             <h2 class="services-header">Гарантия</h2>
             <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом
@@ -331,7 +302,7 @@
       <!--           Кредит      -->
 
       <div class="services slider">
-        <div class="services-item">
+        <div class="services-item services-item-credit">
           <div class="services-item_text">
             <h2 class="services-header">Кредит</h2>
             <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты
@@ -344,17 +315,14 @@
             <use xlink:href="img/sprite.svg#credit"></use>
           </svg>
         </div>
-
       </div>
     </div>
   </div>
 </section>
 
-
 <!--  клиенты-->
 
 <section class="clients wrap">
-
   <ul class="clients-list">
     <li class="clients-list_item"><a href=""><img src="img/png/logo1.png" width="260" height="100" alt="logo"></a></li>
     <li class="clients-list_item"><a href=""><img src="img/png/logo2.png" width="260" height="100" alt="logo"></a></li>
@@ -373,20 +341,14 @@
     <p class="about-item_description">Мы можем доставить ваш товар в самые отдаленные точки
       России! DEVICE работает со многими транспортными компаниями:</p>
     <ul class="about-item_list">
-
       <li><a href="#">Деловые линии</a></li>
       <li><a href="#">Автотрейдинг</a></li>
       <li><a href="#">ЖелДорЭкспедиция</a></li>
-
     </ul>
     <div class="btn-box">
-      <button class="btn">Подробнее о нас</button>
-      <div class="btn-click"></div>
+      <a href="#" class="btn">Подробнее о нас</a>
     </div>
-
   </div>
-
-
   <div class="about-item about-contact">
     <h2 class="about-item_header _header-contact">Контакты</h2>
     <p class="about-item_description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
@@ -395,18 +357,13 @@
       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11922.0602312793!2d33.533304640660305!3d44.630718007967154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1623185943486!5m2!1sru!2sru"
       width="560" height="222" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <div class="btn-box">
-      <button class="btn">Напишите нам</button>
-      <div class="btn-click"></div>
+      <a href="#" class="btn">Напишите нам</a>
     </div>
-
   </div>
-
   <!--  Форма обратной связи-->
 
   <div class="modal">
     <div class="close">
-
-
     </div>
     <form class="form" method="get" action="https://echo.htmlacademy.ru">
       <div class="form_item">
@@ -425,7 +382,6 @@
       </div>
       <div class="btn-box form_item form-btn">
         <button type="submit" class="btn">Отправить</button>
-        <div class="btn-click"></div>
       </div>
     </form>
   </div>
@@ -434,75 +390,35 @@
 <!--  footer-->
 
 <footer class="footer-box">
-  <div class="footer wrap">
-    <div class="footer_item left-box">
+  <div class="footer">
+    <div class="footer_item">
       <div class="footer_item-logo">
-        <a href="index.html">
-          <svg class="logo-footer" width="163" height="35" aria-hidden="true">
+        <a href="index.html" class="link-special">
+          <svg class="logo-footer" width="163" height="35" aria-hidden="true">-->
             <use xlink:href="img/sprite.svg#logo" fill="#FFC600" class="logo-footer"></use>
           </svg>
-          <!--          <img src="img/png/logo_footer.png" alt="">-->
         </a>
       </div>
-      <div class="footer_item-address">
-        <p>Санкт-Петербург, набережная <br>
-          реки Карповки, 5, литера П.
-        </p>
-      </div>
-      <div class="footer_item-thing">
-
-      </div>
-    </div>
-
-    <div class="footer_item center-box">
-      <ul class="footer-nav">
-        <li class="footer-nav_item"><a class="footer-nav_link" href="#">Доставка</a></li>
-        <li class="footer-nav_item"><a class="footer-nav_link" href="#">Гарантия</a></li>
-        <li class="footer-nav_item"><a class="footer-nav_link" href="#">Контакты</a></li>
-      </ul>
-      <ul class="social_net footer-nav">
-        <li class="social_net_item"><a href="#" class="social_net_link">
-          <svg class="facebook" width="32" height="32" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#facebook" class="social_net_facebook"></use>
-          </svg>
-        </a></li>
-        <li class="social_net_item"><a href="#" class="social_net_link">
-          <svg class="instagram" width="32" height="32" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#instagram" class="social_net_instagram"></use>
-          </svg>
-          </a></li>
-        <li class="social_net_item"><a href="#" class="social_net_link">
-          <svg class="twitter" width="32" height="32" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#twitter" class="social_net_twitter"></use>
-          </svg>
-        </a></li>
-      </ul>
-    </div>
-
-
-    <div class="footer_item right-box">
       <div class="footer_form">
         <div class="footer_form-box login-box">
-          <button type="submit" class="login">
+          <a href="#" class="login link-special">
             Войти
-          </button>
+          </a>
           <svg class="login-pic" width="20" height="10" aria-hidden="true">
             <use xlink:href="img/sprite.svg#user" class="login-pic_footer"></use>
           </svg>
 
         </div>
         <div class="footer_form-box compare-box">
-          <button type="submit" class="compare">
+          <a href="#" class="compare link-special">
             Сравнить
-          </button>
+          </a>
           <svg class="compare-pic" width="20" height="10" aria-hidden="true">
             <use xlink:href="img/sprite.svg#compare" class="compare-pic-footer"></use>
           </svg>
-
         </div>
-        <!--    войти, сравнить и корзина - сомневаюсь в тегах-->
         <div class="footer_form-box basket-box">
-          <a href="#" class="basket">
+          <a href="#" class="basket link-special">
             <svg class="basket-pic" width="20" height="10" aria-hidden="true">
               <use xlink:href="img/sprite.svg#bag" class="basket-pic-footer">
               </use>
@@ -511,11 +427,50 @@
           </a>
         </div>
       </div>
-      <div class="phone-box">
-        <a class="phone" href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
+    </div>
+    <div class="footer_item">
+      <div class="footer_item-address">
+        <p>Санкт-Петербург, набережная <br>
+          реки Карповки, 5, литера П.
+        </p>
       </div>
+      <ul class="footer-nav">
+        <li class="footer-nav_item"><a class="footer-nav_link link-special" href="#">Доставка</a></li>
+        <li class="footer-nav_item"><a class="footer-nav_link link-special" href="#">Гарантия</a></li>
+        <li class="footer-nav_item"><a class="footer-nav_link link-special" href="#">Контакты</a></li>
+      </ul>
+      <div class="phone-box">
+        <a class="phone link-special" href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
+      </div>
+    </div>
+    <div class="footer_item">
+      <div class="footer_item-thing">
+      </div>
+      <ul class="social_net">
+        <li class="social_net_item">
+          <a href="#" class="social_net_link">
+            <svg class="facebook social_net_svg" width="32" height="32" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#facebook" class="social_net_facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social_net_item">
+          <a href="#" class="social_net_link">
+            <svg class="instagram social_net_svg" width="32" height="32" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#instagram" class="social_net_instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social_net_item">
+          <a href="#" class="social_net_link">
+            <svg class="twitter social_net_svg" width="32" height="32" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#twitter" class="social_net_twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
       <div class="logo_academy-box">
-        <a class="logo_academy" href="https://htmlacademy.ru/">
+        <a class="logo_academy link-special" href="https://htmlacademy.ru/">
           <svg class="html_academy" width="115" height="33" aria-hidden="true">
             <use xlink:href="img/sprite.svg#html_academy" class="html_academy-footer">
             </use>

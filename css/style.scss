@@ -4,6 +4,7 @@ $special-yellow-dark: #F0C52E;
 $special-yellow-light: #F7E296;
 $basic-grey-light: #E5E5E5;
 $special-green: #91C92F;
+
 :root {
   --basic-black: #000000;
   --basic-dark: #363636;
@@ -14,7 +15,6 @@ $special-green: #91C92F;
   --special-yellow-light: #F7E296;
   --special-green: #91C92F;
 }
-
 
 @font-face {
   font-family: Opensans;
@@ -79,11 +79,11 @@ $special-green: #91C92F;
   overflow: hidden;
 }
 
-
 .wrap {
   width: 80.5%;
   margin: 0 auto;
   padding: 0 10px;
+  max-width: 1160px;
 }
 
 .header-catalog {
@@ -201,7 +201,7 @@ $special-green: #91C92F;
     padding: 0;
     list-style: none;
 
-    .main-nav_link{
+    .main-nav_link {
       font-family: Gilroy, sans-serif;
       font-style: normal;
       font-weight: 800;
@@ -210,7 +210,6 @@ $special-green: #91C92F;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--basic-black);
-
     }
 
     .main-nav_item:nth-child(3) {
@@ -222,12 +221,12 @@ $special-green: #91C92F;
       margin: 0;
       display: none;
       flex-wrap: wrap;
-      width: 73%;
+      width: 100%;
       position: absolute;
       background: #F7E296;
       z-index: 10000;
       left: -60px;
-      padding-right: 24.9vw;
+      padding: 0 60px 0 60px;
     }
   }
 
@@ -253,23 +252,24 @@ $special-green: #91C92F;
     }
 
     .row-one {
-      top: 1.2rem;
-      padding: 25px 23.8vw 33px 60px;
+      top: 20px;
+      padding-top: 20px;
+      padding-bottom: 6px;
 
       &::after {
         content: "";
         position: absolute;
-        width: 42%;
+        width: 35%;
         height: 1px;
         background: linear-gradient(to right, #000, $special-yellow);
-        top: 23px;
+        top: 18px;
         left: 60px;
       }
     }
 
     .row-two {
-      top: 71px;
-      padding: 8px 23.8vw 33px 60px;
+      top: 75px;
+      padding-bottom: 2px;
 
       .main-nav_item-sub:last-child {
         margin-left: 25px;
@@ -277,8 +277,8 @@ $special-green: #91C92F;
     }
 
     .row-three {
-      top: 109px;
-      padding: 8px 23.8vw 33px 60px;
+      top: 103px;
+      padding-bottom: 40px;
       margin-top: 3px;
 
       .main-nav_item-sub {
@@ -302,11 +302,11 @@ $special-green: #91C92F;
     position: relative;
     display: flex;
     justify-content: center;
-    //margin-top: 22px;
     z-index: 1000;
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 77%, rgba(247, 226, 150, 1) 77%, rgba(247, 226, 150, 1) 100%);
     min-height: 513px;
     box-sizing: border-box;
+    margin-top: -1px;
 
     .slider-text {
       padding: 0 0 0 2rem;
@@ -316,7 +316,7 @@ $special-green: #91C92F;
 
       .btn-box {
         margin-top: 13px;
-        margin-left: 5px;
+        margin-left: 44px;
       }
     }
 
@@ -457,7 +457,6 @@ $special-green: #91C92F;
     position: relative;
     z-index: 100000;
     color: var(--basic-black);
-
     text-decoration: none;
 
     &:active {
@@ -500,8 +499,9 @@ $special-green: #91C92F;
   .product-item {
     margin-right: 40px;
     margin-bottom: 1rem;
-    &:hover .product-item_pic{
-      background:  var(--special-yellow-dark);
+
+    &:hover .product-item_pic {
+      background: var(--special-yellow-dark);
     }
 
     &:active a {
@@ -517,7 +517,6 @@ $special-green: #91C92F;
     }
 
     .product-item_pic {
-      //object-fit: cover;
       width: 160px;
       height: 160px;
       background: var(--special-yellow-light);
@@ -613,7 +612,7 @@ $special-green: #91C92F;
       width: 160px;
       height: 8px;
       cursor: pointer;
-      background:  var(--special-yellow-dark);
+      background: var(--special-yellow-dark);
       position: absolute;
       top: 7px;
       left: 7px;
@@ -643,7 +642,7 @@ $special-green: #91C92F;
     }
 
     .services-item_text {
-      margin: -16px 0 0px 50px;
+      margin: -16px 60px 0px 50px;
 
       .services-header {
         font-family: Gilroy, sans-serif;
@@ -798,23 +797,24 @@ $special-green: #91C92F;
     }
   }
 }
-
-.modal {
+.modal{
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+  background: #FFFFFF;
+}
+.modal-form {
   display: none;
   position: absolute;
   top: 0;
   left: 15%;
   max-width: 960px;
   min-height: 550px;
-  background: #FFFFFF;
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
 
   .close {
     position: absolute;
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background:  var(--special-yellow-dark);
+    background: var(--special-yellow-dark);
     opacity: .5;
     right: 23px;
     top: 19px;
@@ -879,7 +879,6 @@ $special-green: #91C92F;
       .message {
         width: 360px;
         height: 50px;
-
         outline: none;
         background: #F2F2F2;
         display: flex;
@@ -923,6 +922,13 @@ $special-green: #91C92F;
     }
   }
 }
+.modal-map{
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  z-index: 999999;
+}
 
 .footer-box {
   min-height: 324px;
@@ -943,9 +949,8 @@ $special-green: #91C92F;
     }
   }
 
-
   .logo-footer {
-    fill:  var(--special-yellow-dark);
+    fill: var(--special-yellow-dark);
 
     &:hover {
       opacity: .7;
@@ -982,7 +987,7 @@ $special-green: #91C92F;
   .login-pic_footer,
   .compare-pic-footer,
   .basket-pic-footer {
-    fill:  var(--special-yellow-dark);
+    fill: var(--special-yellow-dark);
   }
 
   .logo_academy-box {
@@ -996,7 +1001,6 @@ $special-green: #91C92F;
       opacity: .3;
     }
   }
-
 
   .footer_item-thing {
     background: #FFC600;
@@ -1342,7 +1346,7 @@ $special-green: #91C92F;
 
       .catalog-product_filter {
         height: 70px;
-        background:  var(--basic-grey-light);
+        background: var(--basic-grey-light);
 
         .catalog-product_wrap {
           display: flex;
@@ -1485,7 +1489,6 @@ $special-green: #91C92F;
               text-align: right;
             }
 
-
             .catalog-item_tittle {
               font-family: Gilroy, sans-serif;
               font-style: normal;
@@ -1551,7 +1554,6 @@ $special-green: #91C92F;
           text-decoration: none;
           color: var(--basic-black);
 
-
           &:hover {
             background: #D9D9D9;
           }
@@ -1562,7 +1564,6 @@ $special-green: #91C92F;
             opacity: .3;
             text-decoration: none;
             color: var(--basic-black);
-
 
             &:nth-child(2) {
               margin: 0 24px;

@@ -10,6 +10,8 @@
 <body class="body-page">
 
 <!--    шапка-->
+<!--<img-->
+<!--  src="img/sprite.svg"  />-->
 
 <header class="main-header header-catalog wrap">
   <div class="main-header_logo">
@@ -130,7 +132,6 @@
           <p class="characteristic">48 часов</p>
           <p class="description-characteristic">Без подзарядки</p>
         </div>
-
       </div>
     </div>
   </div>
@@ -180,6 +181,7 @@
 <!--    продукция-->
 
 <section class="product wrap">
+  <h2 class="visually-hidden">Каталог товаров</h2>
   <ul class="product-list">
     <li class="product-item">
       <div class="product-item_pic">
@@ -355,14 +357,16 @@
       проверить работоспособность покупки. Всякое бывает.</p>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11922.0602312793!2d33.533304640660305!3d44.630718007967154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1623185943486!5m2!1sru!2sru"
-      width="560" height="222" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      width="560" height="222" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
     <div class="btn-box">
       <a href="#" class="btn">Напишите нам</a>
     </div>
   </div>
+
   <!--  Форма обратной связи-->
 
-  <div class="modal">
+  <div class="modal modal-form">
     <div class="close">
     </div>
     <form class="form" method="get" action="https://echo.htmlacademy.ru">
@@ -385,12 +389,19 @@
       </div>
     </form>
   </div>
+
+  <div class="modal modal-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11922.0602312793!2d33.533304640660305!3d44.630718007967154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1623185943486!5m2!1sru!2sru"
+      width="960" height="572.5" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
 </section>
 
 <!--  footer-->
 
 <footer class="footer-box">
-  <div class="footer">
+  <div class="footer wrap">
     <div class="footer_item">
       <div class="footer_item-logo">
         <a href="index.html" class="link-special">
@@ -480,7 +491,6 @@
     </div>
   </div>
 </footer>
-
 <!--    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
 <script src="js/script.js"></script>
 </body>

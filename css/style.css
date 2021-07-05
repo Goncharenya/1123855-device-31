@@ -65,6 +65,7 @@
   width: 80.5%;
   margin: 0 auto;
   padding: 0 10px;
+  max-width: 1160px;
 }
 
 .header-catalog {
@@ -179,12 +180,12 @@
   margin: 0;
   display: none;
   flex-wrap: wrap;
-  width: 73%;
+  width: 100%;
   position: absolute;
   background: #F7E296;
   z-index: 10000;
   left: -60px;
-  padding-right: 24.9vw;
+  padding: 0 60px 0 60px;
 }
 .main-header .open {
   width: 52%;
@@ -206,28 +207,29 @@
   text-decoration: none;
 }
 .main-header .open .row-one {
-  top: 1.2rem;
-  padding: 25px 23.8vw 33px 60px;
+  top: 20px;
+  padding-top: 20px;
+  padding-bottom: 6px;
 }
 .main-header .open .row-one::after {
   content: "";
   position: absolute;
-  width: 42%;
+  width: 35%;
   height: 1px;
   background: linear-gradient(to right, #000, #F7E296);
-  top: 23px;
+  top: 18px;
   left: 60px;
 }
 .main-header .open .row-two {
-  top: 71px;
-  padding: 8px 23.8vw 33px 60px;
+  top: 75px;
+  padding-bottom: 2px;
 }
 .main-header .open .row-two .main-nav_item-sub:last-child {
   margin-left: 25px;
 }
 .main-header .open .row-three {
-  top: 109px;
-  padding: 8px 23.8vw 33px 60px;
+  top: 103px;
+  padding-bottom: 40px;
   margin-top: 3px;
 }
 .main-header .open .row-three .main-nav_item-sub {
@@ -249,6 +251,7 @@
   background: linear-gradient(0deg, white 0%, white 77%, #f7e296 77%, #f7e296 100%);
   min-height: 513px;
   box-sizing: border-box;
+  margin-top: -1px;
 }
 .slider-first-box .slider-first .slider-text {
   padding: 0 0 0 2rem;
@@ -258,7 +261,7 @@
 }
 .slider-first-box .slider-first .slider-text .btn-box {
   margin-top: 13px;
-  margin-left: 5px;
+  margin-left: 44px;
 }
 .slider-first-box .slider-first .slider-pic {
   text-align: center;
@@ -530,7 +533,7 @@
   border-right: 7px solid #000;
 }
 .slider-second-container .slider-second .services-item_text {
-  margin: -16px 0 0px 50px;
+  margin: -16px 60px 0px 50px;
 }
 .slider-second-container .slider-second .services-item_text .services-header {
   font-family: Gilroy, sans-serif;
@@ -663,16 +666,19 @@
 }
 
 .modal {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+  background: #FFFFFF;
+}
+
+.modal-form {
   display: none;
   position: absolute;
   top: 0;
   left: 15%;
   max-width: 960px;
   min-height: 550px;
-  background: #FFFFFF;
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
 }
-.modal .close {
+.modal-form .close {
   position: absolute;
   width: 55px;
   height: 55px;
@@ -683,13 +689,13 @@
   top: 19px;
   cursor: pointer;
 }
-.modal .close:hover {
+.modal-form .close:hover {
   opacity: 1;
 }
-.modal .close:active {
+.modal-form .close:active {
   opacity: 0.3;
 }
-.modal .close:before, .modal .close:after {
+.modal-form .close:before, .modal-form .close:after {
   content: "";
   width: 2px;
   height: 25px;
@@ -698,27 +704,27 @@
   top: 30%;
   left: 47%;
 }
-.modal .close:after {
+.modal-form .close:after {
   transform: rotate(45deg);
 }
-.modal .close:before {
+.modal-form .close:before {
   transform: rotate(-45deg);
 }
-.modal .form {
+.modal-form .form {
   display: flex;
   flex-flow: column;
   padding: 5rem;
 }
-.modal .form .form-btn {
+.modal-form .form .form-btn {
   margin: 3.5rem 0 0 9rem;
   align-self: flex-start;
 }
-.modal .form .form_item {
+.modal-form .form .form_item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.modal .form .form_item label {
+.modal-form .form .form_item label {
   font-family: Gilroy, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -728,9 +734,9 @@
   margin-bottom: 10px;
   display: block;
 }
-.modal .form .form_item .name,
-.modal .form .form_item .email,
-.modal .form .form_item .message {
+.modal-form .form .form_item .name,
+.modal-form .form .form_item .email,
+.modal-form .form .form_item .message {
   width: 360px;
   height: 50px;
   outline: none;
@@ -740,37 +746,45 @@
   box-sizing: border-box;
   border: 2px solid transparent;
 }
-.modal .form .form_item .name:hover,
-.modal .form .form_item .email:hover,
-.modal .form .form_item .message:hover {
+.modal-form .form .form_item .name:hover,
+.modal-form .form .form_item .email:hover,
+.modal-form .form .form_item .message:hover {
   background: #EAEAEA;
 }
-.modal .form .form_item .name:focus,
-.modal .form .form_item .email:focus,
-.modal .form .form_item .message:focus {
+.modal-form .form .form_item .name:focus,
+.modal-form .form .form_item .email:focus,
+.modal-form .form .form_item .message:focus {
   border: 2px solid #F7E296;
 }
-.modal .form .form_item .name::placeholder,
-.modal .form .form_item .email::placeholder,
-.modal .form .form_item .message::placeholder {
+.modal-form .form .form_item .name::placeholder,
+.modal-form .form .form_item .email::placeholder,
+.modal-form .form .form_item .message::placeholder {
   padding: 1rem 0 0 1rem;
 }
-.modal .form .form_item .name {
+.modal-form .form .form_item .name {
   margin-right: 40px;
 }
-.modal .form .form_item-message {
+.modal-form .form .form_item-message {
   flex-flow: column;
   margin-top: 2rem;
 }
-.modal .form .form_item-message .message {
+.modal-form .form .form_item-message .message {
   resize: none;
   width: 760px;
   height: 167px;
   margin: 0 auto;
 }
-.modal .form .form_item-message .message-description {
+.modal-form .form .form_item-message .message-description {
   align-self: flex-start;
   margin-left: 6rem;
+}
+
+.modal-map {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  z-index: 999999;
 }
 
 .footer-box {

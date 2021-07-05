@@ -797,10 +797,12 @@ $special-green: #91C92F;
     }
   }
 }
-.modal{
+
+.modal {
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
   background: #FFFFFF;
 }
+
 .modal-form {
   display: none;
   position: absolute;
@@ -922,7 +924,8 @@ $special-green: #91C92F;
     }
   }
 }
-.modal-map{
+
+.modal-map {
   display: none;
   position: absolute;
   top: 40px;
@@ -933,7 +936,6 @@ $special-green: #91C92F;
 .footer-box {
   min-height: 324px;
   background: $basic-dark;
-  padding: 0 140px;
 
   .footer {
     margin-top: 3rem;

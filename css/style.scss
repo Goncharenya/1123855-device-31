@@ -119,15 +119,22 @@ $special-green: #91C92F;
     .search-box {
       border-bottom: 2px solid transparent;
       width: 46%;
+      &:after{
+        content: "";
+        width: 80%;
+        height: 2px;
+        background: transparent;
+        display: block;
+      }
+      &:hover:after{
+        background: #000;
+      }
+
 
       .search {
         outline: none;
         border-bottom: 2px solid transparent;
         padding-left: 10px;
-
-        &:hover {
-          border-bottom: 2px solid #000;
-        }
       }
     }
 
@@ -810,6 +817,9 @@ $special-green: #91C92F;
   left: 15%;
   max-width: 960px;
   min-height: 550px;
+  .modal-open{
+    display: block;
+  }
 
   .close {
     position: absolute;
